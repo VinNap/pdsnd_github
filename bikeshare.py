@@ -142,7 +142,7 @@ def user_stats(df, city):
     start_time = time.time()
 
     user_types = df['User Type'].value_counts()
-    print("The count of the different user types are: \n" + str(user_types))
+    print("The count of the different user types are: {} \n".format(user_types))
 
     if city != 'washington.csv':
         print('Gender Counts: ',df['Gender'].value_counts())
